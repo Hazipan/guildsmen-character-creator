@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: beige;
+}
+form{
+    background-color: lightgrey;
+    height: 90vh;
+}
+h1 {
+    text-align: center;
+}
+.card {
+    position: absolute;
+    background-color: hsl(100, 70, 30);
+    width: 80%;
+    visibility: hidden;
+}
+
+#card2 {
+    visibility: visible;
+}
+
+.input {
+    text-align: center;
+    align-items: center;
+}

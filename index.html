@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- link in bootstrap, font awesome, custom stylesheet, and custom script -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/fc32f2c131.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<div class="container-fluid">
+
+    <body>
+        <!-- multi-card form -->
+        <form id="character-creator" action="">
+
+            <h1>Character Creator</h1>
+            <!-- general character info -->
+            <div class="card" id="card1">Character:
+                <input type="text" class="form-control" placeholder="Character Name" required>
+                <input type="text" class="form-control" placeholder="Demeanor" required>
+                <input type="text" class="form-control" placeholder="Physique" required>
+            </div>
+            <!-- race selection -->
+            <div class="card" id="card2">Race:
+                <div class="row">
+                    <div class="col">
+                        <label for="mausca"><input class="input" type="radio" name="race" id="mausca">Mausca</label>
+                    </div>
+                    <div class="col">
+                        <label for="orc"><input class="input" type="radio" name="race" id="orc">Orc</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="sentari"><input class="input" type="radio" name="race" id="sentari">Sentari</label>
+                    </div>
+                    <div class="col">
+                        <label for="slated"><input class="input" type="radio" name="race" id="slated">Slated</label>
+                    </div>
+                    <div class="col">
+                        <label for="ungal"><input class="input" type="radio" name="race" id="ungal">Ungal</label>
+                    </div>
+                </div>
+            </div>
+            <!-- starting skills selection -->
+            <div class="card" id="card3">4 Starting Skills:
+                <label for="craft"><input type="checkbox" class="checkbox" name="starting-skill"
+                        id="craft">Craft</label>
+                <label for="invent"><input type="checkbox" class="checkbox" name="starting-skill"
+                        id="invent">Invent</label>
+                <label for="investigate"><input type="checkbox" class="checkbox" name="starting-skill"
+                        id="investigate">Investigate</label>
+                <label for="lead"><input type="checkbox" class="checkbox" name="starting-skill" id="lead">Lead</label>
+                <label for="medic"><input type="checkbox" class="checkbox" name="starting-skill"
+                        id="medic">Medic</label>
+                <label for="nature"><input type="checkbox" class="checkbox" name="starting-skill"
+                        id="nature">Nature</label>
+                <label for="performance"><input type="checkbox" class="checkbox" name="starting-skill"
+                        id="performance">Performance</label>
+                <label for="sneaky"><input type="checkbox" class="checkbox" name="starting-skill"
+                        id="sneaky">Sneaky</label>
+                <label for="social"><input type="checkbox" class="checkbox" name="starting-skill"
+                        id="social">Social</label>
+                <label for="throwdown"><input type="checkbox" class="checkbox" name="starting-skill"
+                        id="throwdown">Throwdown</label>
+            </div>
+            <!-- guild selection -->
+            <div class="card" id="card4">Guild:
+                <label for="assassins"><input type="radio" name="guild" id="assassins">Assassins Guild</label>
+                <label for="hunters"><input type="radio" name="guild" id="hunters">Hunters Guild</label>
+                <label for="explorers"><input type="radio" name="guild" id="explorers">Explorers Guild</label>
+                <label for="mercenaries"><input type="radio" name="guild" id="mercenaries">Mercenaries Guild</label>
+                <label for="thieves"><input type="radio" name="guild" id="thieves">Thieves Guild</label>
+            </div>
+
+            <!-- navigation buttons -->
+            <div id="buttons">
+                <button type="button" id="prevBtn">Previous</button>
+                <button type="button" id="nextBtn">Next</button>
+            </div>
+
+            <!-- Circles which indicates the steps of the form: -->
+            <div id="progress">
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+            </div>
+
+        </form>
+    </body>
+</div>
+
+</html>
